@@ -3,7 +3,9 @@
 A scalable MySQL database designed for **KurnoolWorks**, a platform that connects students with local businesses for jobs, internships, projects, freelance work, and part-time opportunities.
 
 ---
+## Entity Relationship Diagram
 
+![KurnoolWorks ER Diagram](images/ER_Diagram_Kurnool_Works)
 ## 📌 Project Overview
 
 KurnoolWorks aims to bridge the gap between local talent and local businesses by providing a centralized platform where:
