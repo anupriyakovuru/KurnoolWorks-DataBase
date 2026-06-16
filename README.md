@@ -5,7 +5,7 @@ A scalable MySQL database designed for **KurnoolWorks**, a platform that connect
 ---
 ## Entity Relationship Diagram
 
-![KurnoolWorks ER Diagram](images/ER_Diagram_Kurnool_Works)
+![KurnoolWorks ER Diagram](images/ER_Diagram_Kurnool_Works.png)
 ## 📌 Project Overview
 
 KurnoolWorks aims to bridge the gap between local talent and local businesses by providing a centralized platform where:
