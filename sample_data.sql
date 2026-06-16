@@ -5,17 +5,15 @@ USE kurnoolworks;
 -- ==========================================
 
 INSERT INTO users
-(full_name,email,mobile,password_hash,user_type,email_verified,mobile_verified)
+(full_name,email,mobile,password_hash,user_type)
 VALUES
-('Admin','admin@kurnoolworks.com','9999999999','admin123','admin',1,1),
+('Anu Priya','[anu@student.com](mailto:anu@student.com)','9000000001','password123','student'),
 
-('Anu Priya','anu@student.com','9000000001','password123','student',1,1),
+('Rahul Kumar','[rahul@student.com](mailto:rahul@student.com)','9000000002','password123','student'),
 
-('Rahul Kumar','rahul@student.com','9000000002','password123','student',1,1),
+('Tech Solutions Owner','[owner@techsolutions.com](mailto:owner@techsolutions.com)','9000000003','password123','business'),
 
-('Tech Solutions Owner','owner@techsolutions.com','9000000003','password123','business',1,1),
-
-('ABC CA Firm Owner','owner@abcfirm.com','9000000004','password123','business',1,1);
+('ABC CA Firm Owner','[owner@abccafirm.com](mailto:owner@abccafirm.com)','9000000004','password123','business');
 
 -- ==========================================
 -- STUDENT PROFILES
@@ -28,10 +26,7 @@ college_name,
 course,
 specialization,
 graduation_year,
-experience_months,
 skills,
-linkedin_url,
-portfolio_url,
 city,
 resume_url,
 profile_completion
@@ -44,10 +39,7 @@ VALUES
 'B.Tech',
 'Computer Science',
 2026,
-6,
 'Python, SQL, HTML, CSS',
-'https://linkedin.com/in/anu',
-'https://github.com/anu',
 'Kurnool',
 '/resumes/anu.pdf',
 100
@@ -59,10 +51,7 @@ VALUES
 'B.Com',
 'Commerce',
 2025,
-3,
 'Tally, GST, Excel',
-'https://linkedin.com/in/rahul',
-NULL,
 'Kurnool',
 '/resumes/rahul.pdf',
 90
@@ -82,8 +71,6 @@ city,
 company_description,
 website,
 gst_number,
-company_logo_url,
-company_size,
 verification_status
 )
 VALUES
@@ -94,11 +81,9 @@ VALUES
 'Ramesh Kumar',
 'Software',
 'Kurnool',
-'Software development company',
+'Software Development Company',
 'https://techsolutions.com',
 'GST123456789',
-'/logos/techsolutions.png',
-'11-50',
 'approved'
 ),
 
@@ -108,11 +93,9 @@ VALUES
 'Suresh Kumar',
 'Accounting',
 'Kurnool',
-'CA and Tax Consultancy',
+'CA and Tax Consultancy Services',
 'https://abccafirm.com',
 'GST987654321',
-'/logos/abccafirm.png',
-'1-10',
 'approved'
 );
 
@@ -128,9 +111,7 @@ opportunity_type,
 description,
 skills_required,
 location,
-salary_min,
-salary_max,
-salary_period,
+stipend_salary,
 vacancies,
 application_deadline,
 status
@@ -141,12 +122,10 @@ VALUES
 1,
 'Python Intern',
 'internship',
-'Looking for Python interns',
+'Looking for Python Interns',
 'Python, SQL',
 'Kurnool',
-5000,
-8000,
-'month',
+'5000-8000 Per Month',
 3,
 '2026-12-31',
 'open'
@@ -156,12 +135,10 @@ VALUES
 1,
 'Frontend Developer',
 'job',
-'React developer required',
+'React Developer Required',
 'React, JavaScript',
 'Kurnool',
-25000,
-40000,
-'month',
+'25000-40000 Per Month',
 2,
 '2026-12-31',
 'open'
@@ -171,12 +148,10 @@ VALUES
 2,
 'GST Assistant',
 'internship',
-'Assist in GST filing',
+'Assist In GST Filing',
 'GST, Excel',
 'Kurnool',
-4000,
-7000,
-'month',
+'4000-7000 Per Month',
 5,
 '2026-12-31',
 'open'
@@ -199,21 +174,21 @@ VALUES
 1,
 1,
 'applied',
-'Interested in Python development'
+'Interested In Python Development'
 ),
 
 (
 2,
 1,
 'shortlisted',
-'Good profile'
+'Good Technical Profile'
 ),
 
 (
 3,
 2,
 'applied',
-'Commerce background'
+'Commerce Background'
 );
 
 -- ==========================================
@@ -234,7 +209,7 @@ VALUES
 2,
 'opportunity',
 1,
-'Testing report functionality',
+'Testing Report Feature',
 'open'
 );
 
@@ -258,14 +233,6 @@ VALUES
 'Featured Job Posting',
 'success',
 'TXN100001'
-),
-
-(
-5,
-499.00,
-'Premium Business Subscription',
-'success',
-'TXN100002'
 );
 
 -- ==========================================
@@ -285,12 +252,5 @@ VALUES
 2,
 '123456',
 DATE_ADD(NOW(), INTERVAL 10 MINUTE),
-1
-),
-
-(
-3,
-'654321',
-DATE_ADD(NOW(), INTERVAL 10 MINUTE),
-0
+TRUE
 );
